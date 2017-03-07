@@ -30,7 +30,7 @@ public class FantasmaMove : MonoBehaviour {
 
         destino = (destino == max) ? min : max;
         StartCoroutine(Move(destino));
-    }
+    
 
     void Update()
     {

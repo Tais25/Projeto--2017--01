@@ -30,12 +30,13 @@ public class FantasmaMove : MonoBehaviour {
 
         destino = (destino == max) ? min : max;
         StartCoroutine(Move(destino));
-    
+    }
 
     void Update()
-    {
+        {
         Vector3 velocidadeVetorial = Vector3.left * velocidadeHorizontal;
         transform.position = transform.position + velocidadeVetorial * Time.deltaTime;
 
     }
 }
+ 
